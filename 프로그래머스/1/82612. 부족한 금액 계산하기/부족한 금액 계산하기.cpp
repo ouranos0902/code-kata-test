@@ -9,12 +9,7 @@ long long solution(int price, int money, int count)
     {
         sum += i * price;
     }
-    if(money < sum)
-    {
-        return sum - money;
-    }
-    else
-        return 0;
-    
+   
+    return (money<sum ? sum-money : 0);
 
 }
